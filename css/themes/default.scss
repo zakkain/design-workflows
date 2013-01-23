@@ -1,0 +1,396 @@
+/* variables */
+$base: hsl(0, 0%, 93%);
+$blue: hsl(210, 100%, 20%);
+	$blue-faded: hsla(210, 100%, 20%, 0.65);
+$cran: hsl(319, 30%, 23%);
+$green: hsl(79, 100%, 33%);
+
+/* theme */
+
+html {
+	font-size: 100%;
+	line-height: 1.5rem;
+	background-color: $base;
+	color: $blue;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+body {
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 300;
+}
+
+.navigation, .credits, .switches {
+	display: none;
+}
+
+.ft-page {
+	padding: 3rem;
+}
+
+.flowtime h1,
+.flowtime h2,
+.flowtime h3,
+.flowtime h4,
+.flowtime h5,
+.flowtime h6,
+.flowtime p,
+.flowtime ul,
+.flowtime ol,
+.flowtime dl,
+.flowtime li,
+.flowtime dt,
+.flowtime dd {
+	display: block;
+	     -o-transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
+	   -moz-transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
+	-webkit-transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
+			transition: all 0.3s cubic-bezier(.77, .10, .22, 1);
+}
+
+/* headings */
+
+.flowtime h1,
+.flowtime h2,
+.flowtime h3,
+.flowtime h4,
+.flowtime h5,
+.flowtime h6 {
+	text-rendering: optimizeLegibility;
+	font-family: ultra, sans-serif;
+	font-weight: normal;
+	color: $cran;
+}
+
+.flowtime .h1, .flowtime h1 {
+	font-size: 4.5rem;
+	line-height: 4.5rem;
+	margin: 0 0 3rem 0;
+	padding-top: 0;
+}
+
+.flowtime .h2, .flowtime h2 {
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	margin: 2rem 0;
+}
+
+.flowtime .h3, .flowtime h3 {
+	font-size: 2rem;
+	line-height: 2rem;
+	margin: 2rem 0;
+}
+
+.flowtime .h4, .flowtime h4,
+.flowtime .h5, .flowtime h5,
+.flowtime .h6, .flowtime h6 {
+	font-size: 1.75rem;
+	line-height: 2rem;
+	margin: 2rem 0;
+}
+
+/* paragraph */
+
+.flowtime p {
+	font-size: 1.75rem;
+	line-height: 2rem;
+	margin: 2rem 0;
+}
+
+/* lists */
+
+.flowtime ul,
+.flowtime ol,
+.flowtime dl {
+	font-size: 1.75rem;
+	line-height: 2rem;
+	margin: 2rem 0;
+}
+
+.flowtime ul,
+.flowtime ol,
+.flowtime dl {
+	margin: 0 2rem;
+}
+
+.flowtime li,
+.flowtime dd {
+	line-height: 2.5rem;
+	margin-bottom: 1rem;
+	position: relative;
+	&:not(:first-line) {
+		text-indent: 1em;
+	}
+}
+
+.flowtime dt {
+	position: relative;
+}
+
+.flowtime ul li:before,
+.flowtime dl dt:before {
+	content: "〉";
+	text-align: right;
+	color: $cran;
+	font-weight: 700;
+	text-indent: 0;
+	display: inline-block;
+	// position: absolute;
+	// left: -1.25rem;
+	// top: 20%;
+}
+
+.flowtime ol {
+	counter-reset: list;
+}
+
+.flowtime ol li:before {
+	content: counter(list) ".";
+	counter-increment: list;
+	font-size: 0.75em;
+	color: $cran;
+	margin-right: 0.5rem;
+	display: inline-block;
+	position: relative;
+	top: -0.075em;
+}
+
+.flowtime dl dd {
+	font-size: 0.8em;
+	margin-left: 1rem;
+}
+
+.flowtime small {
+	font-size: 0.75em;
+	vertical-align: middle;
+}
+
+pre, code {
+	font-family: source-code-pro, Monaco, "Lucida Console", monospace;
+	margin: 1rem 0;
+	font-size: 1rem;
+}
+
+samp {
+	font-family: Monaco, "Lucida Console", monospace;
+	font-size: 0.75em;
+}
+
+.flowtime i {
+	font-style: italic;
+	color: $blue-faded;
+}
+.flowtime strong {
+	font-weight: 600;
+}
+
+.flowtime em {
+	font-weight: 600;
+	font-style: italic;
+}
+
+/* quotes and citations */
+
+.flowtime q {
+	quotes: "“" "”";
+}
+
+.flowtime q:before {
+	content: open-quote;
+}
+
+.flowtime q:after {
+	content: close-quote;
+}
+
+.flowtime blockquote {
+	font-size: 1.5rem;
+	margin: 1.5rem 2rem;
+	line-height: 1.35;
+	padding: 0 5rem;
+	font-family: Georgia;
+}
+
+.flowtime q,
+.flowtime cite,
+.flowtime blockquote {
+	font-style: italic;
+}
+
+/* variations */
+
+.flowtime .small {
+	font-size: 0.6em;
+}
+
+.flowtime .attention {
+	color: #ff0000;
+	text-shadow: 1px 2px 0 #000000, 1px -1px 0 rgba(0,0,0,0.3), -1px -1px 0 rgba(0,0,0,0.3), -1px 1px 0 rgba(0,0,0,0.3)
+}
+
+.flowtime sup {
+	font-size: 0.7em;
+	position: relative;
+	top: -0.5em;
+}
+
+.flowtime .align-center {
+	text-align: center;
+}
+
+/* links and focus */
+
+.flowtime a,
+.flowtime a:link,
+.flowtime a:visited,
+.flowtime a:hover,
+.flowtime a:active,
+.flowtime a:focus, 
+.flowtime a:hover img,
+.flowtime a:active img,
+.flowtime a:focus img {
+	color: $green;
+	text-decoration: none;
+	     -o-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+	&.bold {
+		font-weight: 600;
+	}
+	&:after {
+		line-height: 0;
+		content: "➹";
+		font-size: 50%;
+		display: inline-block;
+		vertical-align: 1.5em;
+		opacity: 0.5;
+		color: $cran;
+	}
+}
+
+.flowtime a:hover,
+.flowtime a:active,
+.flowtime a:focus, 
+.flowtime a:hover img,
+.flowtime a:active img,
+.flowtime a:focus img {
+	color: $cran;
+}
+
+.flowtime a:hover img,
+.flowtime a:active img,
+.flowtime a:focus img {
+	-webkit-box-shadow: 1px 2px 10px 5px rgba(0,0,0,0.5);
+	        box-shadow: 1px 2px 10px 5px rgba(0,0,0,0.5);
+}
+
+/* stackable content */
+
+.flowtime .stack {
+	width: 100%;
+	height: 100%;
+	margin: 1rem 0;
+	position: relative;
+}
+
+.flowtime .stacked {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.flowtime img {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+}
+
+/* horizontally and vertically centered stackable content */
+
+.flowtime .stack-center {
+	text-align: center;
+	white-space: nowrap;
+	position: absolute;
+	top: 	2rem;
+	right: 	2rem;
+	bottom: 2rem;
+	left: 	2rem;
+}
+
+.flowtime .stack-center:before {
+	content: "";
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.flowtime .stack-center .stacked-center {
+	white-space: normal;
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* media queries */
+
+@media screen and (min-height: 41em) and (min-width: 80em)
+{
+	html {
+		font-size: 120%;
+	}
+
+	.ft-page {
+		
+	}
+}
+
+@media screen and (min-height: 50em) and (min-width: 90em)
+{
+	html {
+		font-size: 140%;
+	}
+
+	.ft-page {
+		
+	}
+}
+
+@media screen and (max-device-height: 578px)
+{
+	html {
+		font-size: 50%;
+	}
+
+	.ft-page {
+		
+	}
+}
+/* parallax demo */
+
+.parallax-demo {
+	overflow: hidden;
+}
+
+.parallax-demo .kingmix {
+	position: absolute;
+	left: 20%;
+	bottom: -10%;
+	z-index: 50;
+}
+
+.parallax-demo .sax {
+	position: absolute;
+	left: 6%;
+	bottom: -18%;
+	z-index: 40;
+}
+
+.parallax-demo .tone {
+	position: absolute;
+	left: 49%;
+	bottom: -32%;
+	z-index: 30;
+}

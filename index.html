@@ -17,337 +17,410 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="author" content="marcolago">
+	<meta name="author" content="zakkain">
 
-	<meta property="og:title" content="Flowtime.js A HTML Presentation Framework">
+<!-- facebook/open-graph -->
+	<meta property="og:title" content="Design Workflows (or, how to make client work feel like hacking the Gibson)">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://flowtime-js.marcolago.com">
-	<meta property="og:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">
-	<meta property="og:site_name" content="Flowtime.js">
-	<meta property="fb:admins" content="1293500397">
+	<meta property="og:url" content="http://zakkain.github.com/design-workflows">
+	<meta property="og:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.png">
+	<meta property="og:site_name" content="Design Workflows">
+	<!-- <meta property="fb:admins" content="####"> -->
 
+<!-- twitter cards -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:url" content="http://flowtime-js.marcolago.com">
-	<meta name="twitter:title" content="Flowtime.js - A HTML Presentation Framework">
-	<meta name="twitter:description" content="Flowtime.js is an open source framework for easily building HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
-	<meta name="twitter:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.jpg">
-	<meta name="twitter:creator" content="@marcolago">
+	<meta name="twitter:url" content="http://zakkain.github.com/design-workflows">
+	<meta name="twitter:title" content="Design Workflows (or, how to make client work feel like hacking the Gibson)">
+	<meta name="twitter:description" content="A presentation to the Buffalo Front-End Developers Group (@BfloFRED) on January 24, 2013">
+	<meta name="twitter:image" content="http://flowtime-js.marcolago.com/assets/img/share-image.png">
+	<meta name="twitter:creator" content="@zakkain">
 
-	<meta name="description" content="Flowtime.js is an open source framework for easily building HTML presentations or websites. It’s built with web standards in mind and on top of a solid full page grid layout powered by CSS3 hardware accelerated transition and comes with a complete set of Javascript API for deep customization.">
+	<meta name="description" content="A presentation to the Buffalo Front-End Developers Group (@BfloFRED) on January 24, 2013">
 
-	<title>Flowtime.js</title>
+	<title>Design Workflows by Zachary Kain</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="css/flowtime.css">
 	<link rel="stylesheet" href="css/themes/default.css">
-	<link rel="stylesheet" href="assets/css/prism.css">
+	<link rel="stylesheet" href="css/bespoke.css">
+	<link rel="stylesheet" href="assets/css/prism-light.css">
+
+	<!-- webfonts -->
+	<link rel="stylesheet" href="assets/fonts/symbolset/ss-social.css">
+	<script src="http://use.edgefonts.net/source-code-pro:n4,n6,n7,n9.js"></script>
+	<script src="http://use.edgefonts.net/source-sans-pro:n3,i3,n6,n7,i7,n9,i9.js"></script>
+	<script src="http://use.edgefonts.net/ultra.js"></script>
 </head>
 <body class="">
 	
+	<!-- begin the whole deck -->
 	<div class="flowtime">
+
+		<!-- begin section 1 -->
 		<div class="ft-section" data-id="section-1">
-			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="A Presentation Framework by @marcolago">
-				<div class="stack-center">
+			
+			<div id="/section-1/page-1" class="ft-page" data-id="page-1" data-title="(or, how to make client work feel like hacking the Gibson)">
 					<div class="stacked-center">
-						<a href="javascript:Flowtime.next();"><img src="assets/img/logo-white-shadow.png"></a>
-						<p class="page-title">A Presentation Framework by <a href="https://twitter.com/marcolago" target="_blank">@marcolago</a></p>
-						<p>Press <strong>Down Key</strong> to continue<br>
-							Or <strong>Swipe Up</strong> if you prefer.</p>
+						<h1 class="page-title">Design Workflows</h1>
+						<p><strong>(or, how to make client work feel like hacking the Gibson)</strong></p>
+						<hr class="spacer">
+						<p class="align-center">Presented at <a href="http://bflofred.com">BfloFRED</a> | January 24, 2013</p>
 					</div>
-				</div>
 			</div>
+			
 			<div id="/section-1/page-2" class="ft-page" data-id="page-2">
-				<h1>What is it?</h1>
-				<p><strong>Flowtime.js</strong> is a framework for easily building HTML presentations or websites.</p>
-				<p>It’s built with web standards in mind and on top of a solid full page grid layout.</p>
-				<p>The animations are managed with native and accelerated CSS3 transitions.<br>
-					Javascript takes care of the navigation behaviour and adds advanced functionalities and configuration options.</p>
-				<p>Press <strong>Down Key</strong> or <strong>Swipe Up</strong> to continue.</p>
-			</div>
-			<div id="/section-1/page-3" class="ft-page" data-id="page-3">
-				<h1>Compatibility and Support</h1>
-				<p><strong>Flowtime.js</strong> is fully compatible with real moderns browsers:</p>
+				<h1 class="page-title">Obligatory Intro Slide</h1>
+				<hr class="spacer less">
+				<img src="assets/img/portrait.jpg" alt="Photograph of the speaker, Zachary Kain" class="parallax portrait">
 				<ul>
-					<li>Firefox</li>
-					<li>Chrome</li>
-					<li>Safari</li>
-					<li>Opera</li>
-					<li>Internet Explorer 10</li>
+					<li><strong class="h3">Zachary Kain</strong></li>
+					<li>24/M/Toronto <i>(don't be creepy)</i></li>
+					<li>blogs at <a href="http://zkkn.co/journal">zkkn.co/journal</a></li>
+					<li>@zakkain everywhere: 
+						<ul class="inline-list h1">
+							<li class="ss-icon"><a class="bold" href="http://twitter.com/zakkain">twitter</a></li>
+							<li class="ss-icon"><a class="bold" href="http://github.com/zakkain">githuboctocat</a></li>
+							<li class="ss-icon"><a class="bold" href="http://dribbble.com/zakkain">dribbble</a></li>
+							<li class="ss-icon"><a class="bold" href="http://be.net/zakkain">behance</a></li>
+							<li class="ss-icon"><a class="bold" href="http://flickr.com/people/zakkain">flickr</a></li>
+						</ul>
+					</li>
 				</ul>
-				<p>Internet Explorer 9 and some old versions of other browsers lack the transitions and some modern Javascript features but the main navigation and functionalities works.</p>
-				<p>In older browsers degrades to a bi-directional scrolling navigation with anchor links.</p>
 			</div>
+
+			<div class="ft-page company" data-id="page-3" id="/section-1/page-3">
+				<h1 class="page-title h4">Currently working at <a href="http://amperedesign.com">Ampère Design</a></h1>
+				<iframe src="http://amperedesign.com" width="92%" height="87%" frameborder="0"></iframe>
+			</div>
+
 			<div id="/section-1/page-4" class="ft-page" data-id="page-4">
-				<h1>Touch Devices Support</h1>
-				<p>On touch devices you can navigate through slides swiping in all directions.</p>
-				<p>By now Flowtime.js was tested and works on Safari Mobile and Chrome Mobile on iOS devices but the support will be wider in the near future.</p>
+				<h1 class="page-title">Crap I am & crap I do</h1>
+				<hr class="spacer less">
+				<ul>
+					<li class="ft-fragment">a designer</li>
+					<li class="ft-fragment">a good teacher</li>
+					<li class="ft-fragment">a terrible student</li>
+					<li class="ft-fragment">obsessed with complexity</li>
+					<li class="ft-fragment">enjoy feeling like a badass</li>
+				</ul>
 			</div>
+
+			<div id="/section-1/page-5" class="ft-page" data-id="page-5">
+				<h1 class="page-title">I'm talking about:</h1>
+				<ul class="bold">
+					<li class="ft-fragment"><a href="#/section-1/page-1">the “dev environment”</a></li>
+					<li class="ft-fragment"><a href="#/section-2/page-1">the text editor</a></li>
+					<li class="ft-fragment"><a href="#/section-3/page-1">keeping hands on the keyboard</a></li>
+					<li class="ft-fragment"><a href="#/section-4/page-1">apps of convenience</a></li>
+					<li class="ft-fragment"><a href="#/section-5/page-1">buildin’ sites and takin’ names</a></li>
+					<li class="ft-fragment"><a href="#/section-6/page-1">covering your ass</a></li>
+				</ul>
+			</div>
+		<!-- end section 1 -->
 		</div>
+
+		<!-- begin section 2 -->
 		<div class="ft-section" data-id="section-2">
+
 			<div id="/section-2/page-1" class="ft-page" data-id="page-1">
-				<h1>Mastering the Navigation</h1>
-				<p>You can navigate in many ways. The most common way is using the keyboard.</p>
-				<h3>Navigation Keys and default behaviours:</h3>
-				<ul>
-					<li><strong>Down Key</strong> goes to the next page or shows up the next fragment (we’ll see this later).</li>
-					<li><strong>Up Key</strong> goes to the previous page or hides the fragment.</li>
-					<li><strong>Right Key</strong> goes to the adjacent page in the next section <span class="small">(if available, it’s like a grid, otherwise it goes to the last page in the next section).</span></li>
-					<li><strong>Left Key</strong> goes to the adjacent page in the previous section.</li>
-				</ul>
+				<h1 class="page-title">The “dev environment”</h1>
+					<p>sucks, and every time you set one up it will be different.</p>
+					<img class="macro ft-fragment" src="http://zkkn.co/baltarsmash.gif" alt="an animated gif expressing panic and frustration">
 			</div>
+
 			<div id="/section-2/page-2" class="ft-page" data-id="page-2">
-				<h1>Alternate Navigation Control</h1>
-				<p>Pressing the <strong>Shift Key</strong> you can alternate the the default navigation keys behaviour; let’s see how:</p>
-				<ul>
-					<li><strong>Down Key</strong> goes to the next page skipping all the fragments.</li>
-					<li><strong>Up Key</strong> goes to the previous page skipping all the fragments.</li>
-					<li><strong>Right Key</strong> goes to the first page in the next section.</li>
-					<li><strong>Left Key</strong> goes to the first page in the previous section.</li>
-				</ul>
+				<h1 class="page-title">1. set up the basics</h1>
+					<p class="h3"><i>A guide with lots of “how do I fix things” links <a href="https://gist.github.com/3180953">on github</a></i></p>
+					<ul>
+						<li class="ft-fragment">install "Command Line Tools" from Apple, unless you <em>really</em> need Xcode</li>
+						<li class="ft-fragment">install <a href="http://mxcl.github.com/homebrew/">Homebrew</a> and ruby. <a href="http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">Don't take chances</a></li>
+						<li class="ft-fragment">use <a href="https://rvm.io/">rvm</a>, it plays nicer with all the Mountain Lion hiccups</li>
+						<li class="ft-fragment">need php & virtual hosts? <a href="http://www.echoditto.com/blog/os-x-107-lion-development-native-apache-php-homebrew-mysql-or-mariadb">God</a> <a href="http://www.456bereastreet.com/archive/201104/apache_with_virtual_hosts_php_and_ssi_on_mac_os_x_106/">help</a> <a href="http://soderlind.no/archives/2011/08/26/running-wordpress-locally-on-mac-os-x-lion/">you</a> <a href="http://wizardmode.com/2012/06/apache-php-mysql-dev-on-os-x-lion-with-a-minimum-of-pain/">if</a> you don't like <a href="http://mamp.info"><b>MAMP Pro</b></a></li>
+						<li class="ft-fragment">but if you insist, here's <a href="https://gist.github.com/bdf30fa61eb59848f32b">a gist</a></li>
+					</ul>
 			</div>
+
 			<div id="/section-2/page-3" class="ft-page" data-id="page-3">
-				<h1>Some Other Keys</h1>
-				<p>Because: the more, the better.</p>
-				<ul>
-					<li><strong>Page Up Key</strong> goes to the first page of the current section.</li>
-					<li><strong>Page Down Key</strong> goes to the last page of the current section.</li>
-					<li><strong>Home Key</strong> goes to the first page of the first section.</li>
-					<li><strong>End Key</strong> goes to the last page of the last section.</li>
-				</ul>
+				<h1>But really...</h1>
+				<div class="stack-center">
+					<img class="stacked-center" src="http://zkkn.co/aintnobody.gif" alt="">
+				</div>
 			</div>
+
 			<div id="/section-2/page-4" class="ft-page" data-id="page-4">
-				<h1>Overview Mode.</h1>
-				<p>You can look at the entire presentation by pressing <strong>ESC Key</strong>.<br>
-					When in Overview Mode you can go back to the Page Mode by pressing again the ESC Key.</p>
-				<p>Try it out!</p>
-				<p><strong class="attention">WARNING! Experimental Feature.</strong> If you experience problems in webkit browser you can use the alternate Overview Mode; see the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a> for more info.</p>
+				<h1 class="page-title">2. Dotfiles</h1>
+				<p><a href="http://dotfiles.github.com">“Dotfiles”</a> are the invisible files sitting in your root user folder that make using the CLI bearable.</p>
+				<p>Everyone's are going to be different, but a lot can be gained from starting with someone else's.</p>
+				<p>Link to <a href="https://github.com/zakkain/dotfiles">my dotfiles</a></p>
 			</div>
+
 			<div id="/section-2/page-5" class="ft-page" data-id="page-5">
-				<h1>Navigating the Overview</h1>
-				<p>In Overview Mode the arrow keys works in the same way as in Page Mode, highlighting the future destination. To navigate to the highlighted page just press <strong>Return or Enter Key</strong> or click on the desired page.</p>
+				<h1 class="page-title">What can they do?</h1>
+				<ul>
+					<li class="ft-fragment">command aliases
+						<pre><code class="language-bash">alias yolo='git commit -am "DEAL WITH IT" && git push -f origin master'</code></pre>
+						<small>— <a href="https://twitter.com/potch/status/292403281349705729">@potch</a></small>
+					</li>
+					<li class="ft-fragment">terminal theming (I use <a href="http://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/">zsh</a>)</li>
+					<li class="ft-fragment">keeping your ssh keys when you change machines</li>
+					<li class="ft-fragment">backup and restore low-level settings</li>
+				</ul>
 			</div>
-			<div id="/section-2/page-6" class="ft-page" data-id="page-6">
-				<h1>Navigate via Links or Javascript API</h1>
-				<p>You can links every page by simply building the <code>href</code> value using this schema:</p>
-				<pre><code class="language-markup">
-&lt;a href="#/[section data-id attribute]/[page data-id attribute]"&gt;
-				</code></pre>
-				<p>Where <code>data-id</code> attribute is an optional attribute you can add to every section or page.<br>
-					I.e.: if you want to go to back to the first page <a href="#/section-1/page-1">click here</a> <span class="small">(press <strong>backspace</strong> to come back to this page)</span>.</p>
-				<p>You can also trigger every navigation behaviour using the <strong>Flowtime.js Javascript API</strong>.<br>Take a look at the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a> if you want to learn more.</p>
-			</div>
-			<div id="/section-2/page-7" class="ft-page" data-id="page-7">
-				<h1>Navigate With History</h1>
-				<p>Flowtime.js offers a full support for the HTML5 History API where available or gracefully degrades on the hashchange event.</p>
-				<p>This means that you can navigate using the browser’s back and forward buttons and deeplink a page for sharing purposes.</p>
-			</div>
-			<div id="/section-2/page-8" class="ft-page" data-id="page-8">
-				<h1>Progress Indicator</h1>
-				<p>You can enable a default progress indicator useful not only to know what’s the current page you are looking, but also as a navigation tool.</p>
-				<p><strong>Look at the bottom right corner</strong> and you can see a miniature of the presentation structure.</p>
-				<p>Clicking on a page thumb will navigate to that page.</p>
-			</div>
+		<!-- end section 2 -->
 		</div>
 
+		<!-- begin section 3 -->
 		<div class="ft-section" data-id="section-3">
+			
 			<div id="/section-3/page-1" class="ft-page" data-id="page-1">
-				<h1>Fragments Support</h1>
-				<p>The built in fragments navigation allows to advance step by step inside a page.<br>
-					Press down to try.</p>
-				<p class="ft-fragment">You can discover single elements <span class="ft-fragment">or even a single part of an element, <span class="ft-fragment">one <span class="ft-fragment">at <span class="ft-fragment">a <span class="ft-fragment">time.</span></span></span></span></span></p>
-				<p class="ft-fragment">Fragments navigation is deeply customizable with some configuration options<br>
-					You can learn how in the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a>.</p>
+				<h1 class="page-title">The text editor</h1>
+				<p>I use <a href="http://sublimetext.com">Sublime Text 2</a></p>
+				<ul>
+					<li>plugins</li>
+					<li>themes</li>
+					<li>fully text-file configurable</li>
+					<li>works on all the things</li>
+				</ul>
 			</div>
+
 			<div id="/section-3/page-2" class="ft-page" data-id="page-2">
-				<h1>Fragments Unleashed</h1>
-				<p>Fragments can be more than just delayed piece of page.<p>
-				<p>Thanks to some special classes you can add a couple of useful custom behaviours.</p>
+				<h1 class="page-title">Plugins</h1>
+				<p><a href="http://wbond.net/sublime_packages/package_control">Package Control</a>: use it.</p>
 				<ul>
-					<li class="ft-fragment step">The <code>.step</code> fragment will partially fades out;</li>
-					<li class="ft-fragment shy">The <code>.shy</code> fragment will completely hides itself;</li>
-					<li class="ft-fragment">You can use this two special fragment types to easily create special effects.</li>
+					<li><a href="https://github.com/colinta/SublimeStringEncode">stringEncode</a></li>
+					<li><a href="http://wbond.net/sublime_packages/sftp">SFTP</a></li>
+					<li><a href="https://github.com/atadams/Hex-to-HSL-Color">Hex → HSL/RGBA</a></li>
+					<li><a href="https://github.com/dnfehren/SublimeJekyll">SublimeJekyll</a></li>
 				</ul>
-				<p><span class="ft-fragment shy">This</span> <span class="ft-fragment shy">is</span> <span class="ft-fragment shy">a</span> <span class="ft-fragment shy"><code>.shy</code></span> <span class="ft-fragment shy">example!</span></p>
-				<p><span class="ft-fragment step">And</span> <span class="ft-fragment step">this</span> <span class="ft-fragment step">is</span> <span class="ft-fragment step">a</span> <span class="ft-fragment step"><code>.step</code></span> <span class="ft-fragment step">one!</span></p>
 			</div>
+
+			<div id="/section-3/page-3" class="ft-page" data-id="page-3">
+				<h1 class="page-title">Handy scripts</h1>
+				<ul>
+					<li><a href="https://github.com/miohtama/ztanesh/blob/master/zsh-scripts/bin/setup-sync-sublime-over-dropbox.sh">Sync Sublime settings over Dropbox</a></li>
+					<li><a href="https://help.github.com/articles/using-sublime-text-2-as-your-default-editor">Set Sublime as git's default editor</a></li>
+				</ul>
+			</div>
+		<!-- end section 3 -->
 		</div>
 
+		<!-- begin section 4 -->
 		<div class="ft-section" data-id="section-4">
+
 			<div id="/section-4/page-1" class="ft-page" data-id="page-1">
-				<h1>Default HTML Structures</h1>
-				<p>Flowtime.js comes with a default theme that styles the most common HTML structures, like:</p>
-				<h1>1<sup>st</sup> Level Heading</h1>
-				<h2>2<sup>nd</sup> Level Heading</h2>
-				<h3>3<sup>rd</sup> Level Heading</h3>
-				<h4>4<sup>th</sup>, 5<sup>th</sup> and 6<sup>th</sup> Level Heading</h4>
+				<h1 class="page-title">Hands on the keyboard</h1>
+				<p>Using the mouse is slow, and caressing the glass trackpad feels wrong... yet so right</p>
+				<img class="ft-fragment" src="http://zkkn.co/disgust.gif" alt="an animated gif expressing disgust">
 			</div>
+			
 			<div id="/section-4/page-2" class="ft-page" data-id="page-2">
-				<h1>Unordered Lists</h1>
-				<ul>
-					<li>An item.</li>
-					<li>Another item.</li>
-					<li>Just another item.</li>
-					<li>Ok, we get it!</li>
+				<h1 class="page-title">Alfred.app</h1>
+				<p>Who here uses a launcher-bar application?</p>
+				<img class="float-right" src="http://www.alfredapp.com/images/alfred-logo.png" alt="the Alfred.app logo">
+				<ul class="ft-fragment">
+					<li>active development</li>
+					<li>plugin architecture</li>
+					<li>cheap</li>
 				</ul>
 			</div>
+
 			<div id="/section-4/page-3" class="ft-page" data-id="page-3">
-				<h1>Ordered Lists</h1>
-				<ol>
-					<li>One.</li>
-					<li>Two.</li>
-					<li>Three.</li>
-					<li>Four.</li>
-				</ol>
+				<h1 class="page-title">My Alfred habits</h1>
+				<ul>
+					<li>simple & scientific calculations</li>
+					<li>control iTunes without leaving the current app</li>
+					<li>custom search hacks</li>
+					<li><a href="http://ttscoff.github.com/QuickQuestion/">local knowledge-base <i><a href="http://brettterpstra.com/2011/10/02/forget-about-it-or-not/">via @ttscoff</a></i></a></li>
+					<li>the <strong>epic</strong> clipboard buffer</li>
+				</ul>
 			</div>
-			<div id="/section-4/page-4" class="ft-page" data-id="page-4">
-				<h1>Definition Lists</h1>
-				<dl>
-					<dt>One:</dt>
-					<dd>a single unit of everything.</dd>
-					<dt>Two:</dt>
-					<dd>the only even prime number.</dd>
-					<dt>Three:</dt>
-					<dd>without the “h” is a plant.</dd>
-					<dt>Four:</dt>
-					<dd>“Quattro” in italian.</dd>
-				</dl>
-			</div>
-			<div id="/section-4/page-5" class="ft-page" data-id="page-5">
-				<h1>Quotes and Citations</h1>
-				<p>My favourite quotation: <q>The bad craftsman blames his tools</q>.</p>
-				<blockquote>
-					Sotto un cespo di rose scarlatte dai al rospo the caldo col latte.<br>
-					Sotto un cespo di rose paonazze tocca al rospo lavare le tazze.
-				</blockquote>
-				<p><cite><a href="http://html5doctor.com/blockquote-q-cite/" target="_blank">Quoting and citing with &lt;blockquote&gt;, &lt;q&gt;, &lt;cite&gt;, and the cite attribute</a>	</cite> on HTML5 Doctor.</p>
-			</div>
-			<div id="/section-4/page-6" class="ft-page" data-id="page-6">
-				<h1>Theme and Styling</h1>
-				<p>If you don’t like the default theme or you want to build your own (or both things),<br>
-					or if you want to build a website on top of Flowtime.js,<br>
-					you can write your own theme and replace the default one.</p>
-				<p>Theme and core css are in separate files so you can’t break the layout (unless you override some classes).</p>
-				<h2>Fluid Layout</h2>
-				<p>Everything can be fluid, just use <strong>em</strong>, <strong>rem</strong> and <strong>%</strong> units if you want to make an element resizable.</p>
-			</div>
+
+		<!-- end section 4 -->
 		</div>
 
+		<!-- begin section 5 -->
 		<div class="ft-section" data-id="section-5">
+
 			<div id="/section-5/page-1" class="ft-page" data-id="page-1">
-				<h1>Image Management</h1>
-				<p>Images are fluid like all the other content.</p>
-				<p>You can insert images in the flow or stack images ones on top the others with a minimal markup overhead to create some fancy fragments tricks.</p>
-				<p>Go to the next pages to see fluid images in action and how stacked images can be managed, both in the flow or centered in the slide.<br>
-					Look at the source code to learn how to write the markup.</p>
+				<h1 class="page-title">Apps of convenience</h1>
+				<p>Single-task apps that do one thing very well is the way we're headed</p>
 			</div>
-			<div id="/section-5/page-2" class="ft-page" data-id="page-2" data-title="Fluid Images">
-				<a href="http://www.genereavventura.com" target="_blank"><img src="assets/img/genereavventura.jpg"></a>
+
+			<div id="/section-5/page-2" class="ft-page" data-id="page-2">
+				<h1 class="page-title">Boom</h1>
+				<p><small>Command-line snippets, by <a href="http://zachholman.com/2010/11/text-snippets-boom/">Zach Holman</a></small></p>
+				<hr class="spacer less">
+				<ul>
+					<li>No more forgetting obscure git commands</li>
+					<li>set up snippets for editing certain files or <samp>cd</samp>-ing to key directories</li>
+					<li>the more time you spend in the terminal, the more useful it is for <em>everything</em></li>
+				</ul>
 			</div>
+
 			<div id="/section-5/page-3" class="ft-page" data-id="page-3">
-				<h1>Stacked Images</h1>
-				<div class="stack">
-					<div class="stacked"><img src="assets/img/mi1-stacked-0.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-1.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-2.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-3.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-4.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-5.png"></div>
-					<div class="ft-fragment stacked"><img src="assets/img/mi1-stacked-6.png"></div>
-				</div>
-			</div>
+				<h1 class="page-title">Hub</h1>
+				<p><small>Command line wrapper for github-based git commands, by <a href="defunkt.github.com/hub/">Defunkt</a></small></p>
+				<ul>
+					<li>no more typing out <samp>git@github.com:user/repoName.git</samp> to clone, etc</li>
+					<li>fork, browse issues, wikis, launch compare views, all from the CLI</li>
+					<li class="ft-fragment">not sexy, but <em>so convenient</em>
+						<img src="http://zkkn.co/landoclap.gif" alt="">
+					</li>
+				</ul>
+			</div>			
+
 			<div id="/section-5/page-4" class="ft-page" data-id="page-4">
-				<div class="stack-center">
-					<h1 class="stacked-center">Centered Stacked Images</h1>
-				</div>
-				<div class="ft-fragment stack-center"><img class="stacked-center" src="assets/img/mi2-concept-art.jpg"></div>
-				<div class="ft-fragment stack-center"><img class="stacked-center" src="assets/img/mi2-original.jpg"></div>
-				<div class="ft-fragment stack-center"><img class="stacked-center" src="assets/img/mi2-special-edition.jpg"></div>
+				<h1 class="page-title">Menu-bar Apps</h1>
+				<hr class="spacer less">
+				<ul>
+					<li class="ft-fragment"><b>Better Touch Tool</b>: custom gestures, window-snapping à la Windows 7. <i>(app store)</i></li>
+					<li class="ft-fragment"><b>Characters</b>: one-click copying of unicode characters and HTML entity codes. <i>(app store)</i></li>
+					<li class="ft-fragment"><b>Frank DeLoupe</b>: color-picker that handles hex, RGB(A), HSL(A). <i>(app store)</i></li>
+					<li class="ft-fragment"><b>Bartender</b>: hides all these menubar apps behind a single icon <i><a href="http://www.macbartender.com/">link</a></i></li>
+				</ul>
 			</div>
-			<div id="/section-5/page-5" class="ft-page" data-id="page-5">
-				<div class="stack-center">
-					<div class="stacked-center">
-						<h1>About the Centered Stack</h1>
-						<p class="ft-fragment">You can center anything, not only images!</p>
-						<p class="ft-fragment">Just like this content.<br>Useful for splash pages and titles.</p>
-						<p class="ft-fragment">And you are not limited to stacks, you can center what you want.</p>
-					</div>
-				</div>
-			</div>
+
+		<!-- end section 5 -->
 		</div>
 
+
+
+<!-- begin section 6 -->
 		<div class="ft-section" data-id="section-6">
+
 			<div id="/section-6/page-1" class="ft-page" data-id="page-1">
-				<h1>Native Parallax Support</h1>
-				<p>By popular demand Flowtime.js includes native parallax support*.</p>
-				<p>Simply add a <code>parallax</code> class to anything you want to have parallax enabled and configure the amount of distance for all elements or for a single element using <code>data-parallax</code> attribute.</p>
-				<p>For an example go to the <a href="#/section-6/page-2">next page</a>; for more info read the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a>.</p>
-				<p><span class="small">* By the way: I’m not a parallax fan; but ehi… this is the "web 3.0".</span></p>
+				<h1 class="page-title">Finally, some workflow!</h1>
+				<div class="stack-center">
+					<img class="stacked-center ft-fragment" src="http://zkkn.co/shitjustgotreal.jpg" alt="shit just got real">
+				</div>
 			</div>
-			<div id="/section-6/page-2" class="ft-page parallax-demo" data-id="page-2">
-				<h1>The Invaders from Audiogalaxy</h1>
-				<img class="kingmix parallax" src="assets/img/kingmix.png" data-parallax="1500,1500">
-				<img class="sax parallax" src="assets/img/sax.png" data-parallax="750,750">
-				<img class="tone parallax" src="assets/img/tone.png" data-parallax="500,500">
+
+			<div id="/section-6/page-2" class="ft-page" data-id="page-2">
+				<h1 class="page-title h2">Where I offend half of you</h1>
+				<ul>
+					<li class="ft-fragment">I don't like using PHP</li>
+					<li class="ft-fragment">WordPress can be restricting/time-consuming for content strategy</li>
+					<div class="stack-center">
+						<img class="stacked-center ft-fragment shy" src="http://zkkn.co/flippintables.gif" alt="flipping tables">
+					</div>
+					<li class="ft-fragment">all this cool stuff has to stay easy & modular</li>
+				</ul>
 			</div>
+
 			<div id="/section-6/page-3" class="ft-page" data-id="page-3">
-				<h1>This Page Is Just for Testing the Parallax</h1>
-				<p>In the previous page, from left to right:</p>
-				<dl>
-					<dt>Sax:</dt>
-						<dd>King Mix’s most trusted servant. After a diploma in the music conservatory in the…</dd>
-					<dt>King Mix:</dt>
-						<dd>son of the noble dynasty of the Mix of Censor, he soon shows his…</dd>
-					<dt>Tone:</dt>
-						<dd>the most feared space intruder on Mixer. He flunked the musical exam…</dd>
-				</dl>
-				<p>More info about this villains on <a href="http://www.genereavventura.com" target="_blank">www.genereavventura.com</a>.
+				<h1 class="page-title">A better way</h1>
+				<p><a href="http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/">DevelopmentSeed</a></p>
+				<blockquote>We began developing the majority of our projects for clients as simple, single page websites by manually coding the HTML, CSS, and JavaScript files. We pushed the boundaries of what we could do we these standards and avoided building server applications at all costs. As a result, we were able to build some of our best work.</blockquote>
 			</div>
+
+			<div id="/section-6/page-4" class="ft-page" data-id="page-4">
+				<h1 class="page-title h2">“Embedding services for advanced functionality”</h1>
+				<ul>
+					<li class="ft-fragment">Static sites serving up JSON & 3rd-party APIs is flexible and nimble</li>
+					<li class="ft-fragment"><a href="http://prose.io/">Prose.io</a></li>
+					<li class="ft-fragment">Flickr is a better photo CMS than I could build with Wordpress custom fields</li>
+					<li class="ft-fragment">The downside is reliance on 3rd-party systems.</li>
+				</ul>
+			</div>
+
+			<div id="/section-6/page-1" class="ft-page" data-id="page-1">
+				<h1 class="page-title">Why I like it</h1>
+				<blockquote>We’re now at a point where we can build completely client-side websites that have advanced server-side applications embedded from dedicated external services. If one service fails, it does not impact others or the content of the website. This is a marked improvement in resilience over the previous model.</blockquote>
+				<ul>
+					<li class="ft-fragment">easier for me to execute</li>
+					<li class="ft-fragment">more familiar for the client, and probably cheaper</li>
+				</ul>
+			</div>
+
+			<div id="/section-6/page-5" class="ft-page" data-id="page-5">
+				<h1 class="page-title">Codekit is awesome</h1>
+				<p>we all know <a href="http://incident57.com/codekit/">Codekit</a> right?</p>
+				<ul class="ft-fragment">
+					<li>compiles all the things</li>
+					<li>liveReloads Safari & Chrome, injects css</li>
+					<li>a billion other things</li>
+					<li class="ft-fragment">alternatives: <a href="http://yeoman.io">yeoman</a>, <a href="http://brunch.io">brunch</a>, <a href="http://hammerformac.com">hammer</a></li>
+				</ul>
+			</div>
+
+			<div id="/section-6/page-6" class="ft-page" data-id="page-6">
+				<h1 class="page-title">Specialty Apps</h1>
+				<ul>
+					<li class="ft-fragment"><a href="http://fontprep.com">FontPrep</a> for creating webfonts</li>
+					<li class="ft-fragment"><a href="http://bywordapp.com">Byword</a> and <a href="http://www.hogbaysoftware.com/products/quickcursor">QuickCursor</a> for forms</li>
+					<li class="ft-fragment"><a href="http://www.sequelpro.com/">SequelPro</a> for the times I do need to manage mySQL databases</li>
+					<li class="ft-fragment"><a href="stereopsis.com/flux/">Flux.app</a> for not burning my retinas</li>
+				</ul>
+			</div>
+
+		<!-- end section 6 -->
 		</div>
 
+		<!-- begin section 7 -->
 		<div class="ft-section" data-id="section-7">
+
 			<div id="/section-7/page-1" class="ft-page" data-id="page-1">
-				<h1>Code Snippets Highlight</h1>
-				<p>Code highlight is a courtesy of <a href="http://prismjs.com/" target="_blank">Lea Verou’s Prism</a>.<br>Because I really didn’t want to re-invent the wheel.<br><span class="small">You can use what you want, it’s not a dependency (but it’s very smart and cool).</span></p>
-				<pre><code class="language-javascript">function saySomethingSmart()
-{
-	alert("The bad craftsman blames his tools!");
-}</code></pre>
-				<pre><code class="language-css">.is-not-water {
-	display: inline-block;
-}</code></pre>
-				<pre><code class="language-markup">&lt;h1&gt;The Bad Craftsman Blames His Tools!&lt;/h1&gt;</code></pre>
+				<h1 class="page-title">Testing</h1>
+				<p>This is only until I win the lotto and set up a private device lab in a volcano</p>
+				<ul>
+					<li class="ft-fragment"><a href="https://saucelabs.com">Sauce.app</a></li>
+					<li class="ft-fragment"><a href="https://itunes.apple.com/app/aptus/id510487565?mt=12">Aptus</a></li>
+					<li class="ft-fragment"><a href="http://html.adobe.com/edge/inspect/">Edge Inspect</a></li>
+				</ul>
 			</div>
 
 			<div id="/section-7/page-2" class="ft-page" data-id="page-2">
-				<h1>Events and Custom Implementations</h1>
-				<p>When navigated to a page Flowtime.js fires a custom <code>flowtimenavigation</code> event full of useful properties to customize or build your components or behaviours.</p>
-				<p>Read the <a href="https://github.com/marcolago/flowtime.js" target="_blank">documentation</a> to learn more about this event and its properties.</p>
+				<h1 class="page-title">Review</h1>
+				<p>I've finally stopped sending photos of printed screenshots in Microsoft Word files</p>
+					<ul>
+						<li class="ft-fragment"><a href="http://derailer.org/paparazzi/">Paparazzi</a></li>
+						<li class="ft-fragment"><a href="http://prevue.it/">Prevu.it</a></li>
+						<li class="ft-fragment"><a href="progrium.com/localtunnel/">localtunnel</a> or <a href="showoff.io">showoff.io</a></li>
+					</ul>
 			</div>
+
+		<!-- end of section 7 -->
 		</div>
 
+		<!-- begin section 8 -->
 		<div class="ft-section" data-id="section-8">
+			
 			<div id="/section-8/page-1" class="ft-page" data-id="page-1">
-				<h1>Use It! It’s Free</h1>
-				<p>This project is open source, feel free to contribute to the development on <a href="https://github.com/marcolago/flowtime.js" target="_blank">Github</a>.</p>
-				<p>Feedbacks, suggestions and bug reports are welcomes.</p>
-				<p>Use it as you wish and build great things.<br>And when you’ll have done let me know the URL, I will appreciate it.</p>
+				<h1 class="page-title">We're done!</h1>
+				<hr class="spacer less">
+				<img class="macro-s stacked-center" src="http://wil.to/_/internet2.gif">
 			</div>
 
-			<div id="/section-8/page-2" class="ft-page" data-id="page-2">
-				<h1>Thank You</h1>
-				<p>Designed and coded by Marco Lago<br>
-					Interaction/Experience/Game/Designer/Developer</p>
-				<p>You can find me on Twitter as <a href="https://twitter.com/marcolago" target="_blank">@marcolago</a></p>
-				<p>If you like this work spread the word, you know how ;)</p>
-				<h2>Have Fun</h2>
+			<div id="/section-8/page-4" class="ft-page" data-id="page-4">
+				<h1 class="page-title">My ugly gob</h1>
+				<p class="bold">LIKE, TWEET, REBLOG AND SHARE ON ALL YOUR SOCIAL MEDIAS</p>
+				<img src="http://wil.to/_/I-must-go.jpg" class="parallax portrait">
+				<ul>
+					<li><strong class="h3">Zachary Kain</strong></li>
+					<li>blogs at <a href="http://zkkn.co/journal">zkkn.co/journal</a></li>
+					<li>@zakkain everywhere: 
+						<ul class="inline-list h1">
+							<li class="ss-icon"><a class="bold" href="http://twitter.com/zakkain">twitter</a></li>
+							<li class="ss-icon"><a class="bold" href="http://github.com/zakkain">githuboctocat</a></li>
+							<li class="ss-icon"><a class="bold" href="http://dribbble.com/zakkain">dribbble</a></li>
+							<li class="ss-icon"><a class="bold" href="http://be.net/zakkain">behance</a></li>
+							<li class="ss-icon"><a class="bold" href="http://flickr.com/people/zakkain">flickr</a></li>
+						</ul>
+					</li>
+				</ul>
 			</div>
+
+		<!-- end section 8 -->
 		</div>
+
+	<!-- end of the entire deck -->
 	</div>
 
-	<a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+	<!-- <a href="https://github.com/marcolago/flowtime.js"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a> -->
 	
 	<script src="js/brav1toolbox.js"></script>
 	<script src="js/flowtime.js"></script>
 	<script src="assets/js/prism.js"></script>
+	<script src="assets/js/prism-bash.js"></script>
 
 	<script type="text/javascript">
 		var cacheTitle = document.title.replace("Flowtime.js | ", "");

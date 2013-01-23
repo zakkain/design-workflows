@@ -1,0 +1,68 @@
+[class^="spacer"] {
+  border: 0;
+  height: 0;
+  margin: 0;
+  padding: 3rem 0; }
+  [class^="spacer"][class~="less"] {
+    padding: 0.5rem 0; }
+
+.portrait {
+  box-sizing: border-box;
+  width: 28%;
+  float: left;
+  margin-right: 6rem;
+  border: 0.5rem solid white;
+  box-shadow: 0 0 1px #666; }
+
+.float-left {
+  float: left; }
+  .float-left.pad {
+    margin-right: 2rem; }
+
+.float-right {
+  float: right; }
+
+li img {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  width: 20%; }
+
+.flowtime .inline-list {
+  padding-top: 1rem;
+  text-indent: 1rem;
+  list-style: none;
+  margin-left: 0; }
+  .flowtime .inline-list li {
+    display: inline;
+    list-style: none; }
+    .flowtime .inline-list li.ss-icon a {
+      vertical-align: bottom; }
+    .flowtime .inline-list li:before {
+      content: ""; }
+  .flowtime .inline-list a:after {
+    content: ""; }
+
+.macro {
+  width: 50%;
+  text-align: center; }
+
+.macro-s {
+  width: 40%; }
+
+img.ft-fragment {
+  display: none; }
+
+img.ft-fragment.revealed.step {
+  opacity: 0.3;
+  display: inline; }
+
+img.ft-fragment.revealed,
+img.ft-fragment.revealed-temp,
+img.ft-fragment.revealed.actual {
+  display: inline;
+  opacity: 1; }
+
+.company {
+  padding: 1rem; }
+  .company .page-title {
+    margin-top: 0; }
